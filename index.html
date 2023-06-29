@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfect formularz</title>
+    
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <section class="contact wrapper section-padding">
+        <h2 class="section-heading">Kontakt</h2>
+
+
+        <form class="contact__form" method="post" action="#">
+            <div class="contact__box">
+                <label for="contact-name" class="contact__label">Imię: (min. 3 znaki)*</label>
+                <input type="text" class="contact__input" id="contact-name" required="" pattern=".{3,}" autocomplete="username">
+                <img class="contact__icon" src="img/user.png" alt="User icon">
+            </div>
+            <div class="contact__box">
+                <label for="contact-mail" class="contact__label">Adres mailowy:</label>
+                <input type="email" class="contact__input" id="contact-mail" required="" autocomplete="email">
+                <img class="contact__icon" src="img/email.png" alt="Email icon"> 
+            </div>
+            <div class="contact__box">
+                <label for="contact-textarea" class="contact__label">Wiadomość:</label>
+                <textarea class="contact__textarea" id="contact-textarea" autocomplete="off" required=""></textarea>
+                <img class="contact__icon" src="img/text.png" alt="Text icon">
+            </div>
+            <span class="contact__honey">
+                <label for="honey">Jeżeli jesteś człowiekiem, nie wypełniaj tego pola</label>
+                <input type="text" name="honey" autocomplete="off">
+            </span>
+
+            <button type="submit" class="contact__btn btn-special-animation" autocomplete="off">Wyślij
+                <img class="contact__btn-icon" src="img/send.png" alt="Send icon">
+            </button>
+        </form>
+    </section>
+
+    <script src="main.js"></script>
+</body>
+</html>
